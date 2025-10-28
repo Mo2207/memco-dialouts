@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import Button from "./button";
 import SearchBar from "./searchbar";
 
@@ -7,13 +6,13 @@ export default function Navigation() {
   return (
     <div className="flex flex-col items-left justify-center font-sans text-black bg-[#ffffff] min-w-screen px-20 py-10">
 
-      <div className="flex pb-10 ">
-        <Image
-          src="/images/memco-logo.jpg"
-          width={350}
-          height={350}
-          alt="Memco Controls Logo"
-        />
+      <div className="absolute right-30 top-30 transform -translate-y-1/2 font-bold text-lg">
+        {new Date().toLocaleDateString("en-US", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
       </div>
 
       <div className="relative my-10">
@@ -31,9 +30,9 @@ export default function Navigation() {
         </div>
 
         {/* Searchbar */}
-          <div className="mx-auto">
-            <SearchBar />
-          </div>
+        <div className="mx-auto">
+          <SearchBar />
+        </div>
 
       </div>
 

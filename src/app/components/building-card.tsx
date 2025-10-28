@@ -12,27 +12,27 @@ export default function BuildingCard() {
         {/* Software Version */}
         <li className="">
             <div>
-                <li>icon here</li>
+                <h2>icon here</h2>
                 <Button href="/building-details">Details</Button>
             </div>
         </li>
         
         {/* Building Info */}
         <li>
-            <div> 
+            <ul> 
                 <li>Type:</li>
                 <li>License Owner's Name:</li>
                 <li>License Site's Name:</li>
                 <li>Name/Tag:</li>
-            </div>
+            </ul>
         </li>
         
         {/* City/Province */}
         <li>
-            <div>
+            <ul>
                 <li>City:</li>
                 <li>Province:</li>
-            </div>
+            </ul>
         </li>
         
         {/* URL */}
@@ -42,20 +42,20 @@ export default function BuildingCard() {
         
         {/* Connection Status */}
         <li>
-            <div>
+            <ul>
                 <li>Status:</li>
                 <li>connection status here</li>
-            </div>
+            </ul>
         </li>
         
         {/* WebCTRL Login Info */}
         <li>
-            <div>
+            <ul>
                 <li>User:</li>
                 <li>Password:</li>
                 <li>Date Changed:</li>
                 <li>(YYYY-MM-DD):</li>
-            </div>
+            </ul>
         </li>
 
 

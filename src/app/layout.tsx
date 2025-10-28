@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,6 +28,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="bg-white">
+          <div className="flex pl-20 pt-20">
+            <Image
+              src="/images/memco-logo.jpg"
+              width={350}
+              height={350}
+              alt="Memco Controls Logo"
+            />
+          </div>
+        </header>
         {children}
       </body>
     </html>
